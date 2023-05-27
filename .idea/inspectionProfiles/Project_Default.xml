@@ -1,0 +1,45 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E402" />
+          <option value="W605" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="list.__getitem__" />
+          <option value="set.__getitem__" />
+          <option value="dict.__getitem__" />
+          <option value="__main__.switch" />
+          <option value="__main__.JSON_database" />
+          <option value="__main__.Switch" />
+          <option value="src.interpreter.Interpreter.switch" />
+          <option value="src.interpreter.Interpreter.Switch" />
+          <option value="src.*" />
+          <option value="latex.*" />
+          <option value="landing_page_app.models.Car.objects" />
+          <option value="landing_page_app.models.Date.objects" />
+          <option value="landing_page_app.models.User.objects" />
+          <option value="django.db.models.fields.related.OneToOneField.username" />
+          <option value="landing_page_app.models.Request.objects" />
+          <option value="landing_page_app.models.Blacklist.objects" />
+          <option value="landing_page_app.models.Whitelist.objects" />
+          <option value="str.date" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
