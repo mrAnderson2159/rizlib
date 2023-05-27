@@ -1,4 +1,5 @@
 __all__ = {'JSONDatabase'}
+
 __author__ = "Valerio Molinari"
 __credits__ = "Valerio Molinari"
 __maintainer__ = "Valerio Molinari"
@@ -7,12 +8,19 @@ __email__ = "valeriomolinariprogrammazione@gmail.com"
 from json import dumps, loads
 from pathlib import Path
 from documentation.types import PathHint
-from text.logs import warning, success, Silence
+from terminal.text.logs import warning, success, Silence
 from os.path import exists
 
 
 class JSONDatabase:
     def __init__(self, json_db_path: PathHint):
+        """Allows to create and manage a database in a json file.
+        Is used to read and parse the database into a dictionary then
+        update the file with the modified database if needed.
+
+        :param json_db_path: the absolute or relative path to the database.
+        The extension .json will be added automatically if not present
+        """
         if not json_db_path.endswith('.json'):
             json_db_path += '.json'
 

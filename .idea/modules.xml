@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../poker/.idea/poker.iml" filepath="$PROJECT_DIR$/../poker/.idea/poker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/rizlib.iml" filepath="$PROJECT_DIR$/.idea/rizlib.iml" />
     </modules>
   </component>
