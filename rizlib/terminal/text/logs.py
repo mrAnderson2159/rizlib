@@ -26,7 +26,7 @@ __maintainer__ = "Valerio Molinari"
 __email__ = "valeriomolinariprogrammazione@gmail.com"
 
 from typing import Callable
-from terminal.text.colors import yellow, green
+from rizlib.terminal.text.colors import yellow, green
 from enum import Enum, auto
 
 

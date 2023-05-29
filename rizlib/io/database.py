@@ -7,8 +7,8 @@ __email__ = "valeriomolinariprogrammazione@gmail.com"
 
 from json import dumps, loads
 from pathlib import Path
-from documentation.types import PathHint
-from terminal.text.logs import warning, success, Silence
+from rizlib.documentation.types import PathHint
+from rizlib.terminal.text.logs import warning, success, Silence
 from os.path import exists
 
 

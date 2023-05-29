@@ -12,8 +12,8 @@ __email__ = "valeriomolinariprogrammazione@gmail.com"
 
 import os
 from typing import *
-from terminal.text.colors import *
-from terminal.text.stdin import Stdin
+from rizlib.terminal.text.colors import *
+from rizlib.terminal.text.stdin import Stdin
 
 
 class MenuInterrupt(Exception):

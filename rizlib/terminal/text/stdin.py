@@ -11,7 +11,7 @@ __maintainer__ = "Valerio Molinari"
 __email__ = "valeriomolinariprogrammazione@gmail.com"
 
 from typing import Optional, Type, Sequence, Union
-from terminal.data_structures.queue import QueueNode, Queue
+from rizlib.terminal.data_structures.queue import QueueNode, Queue
 
 
 class Word(QueueNode):
