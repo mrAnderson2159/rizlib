@@ -32,21 +32,25 @@ def indent_lines(text: str, indentation: int) -> str:
 
 
 def spaced(sequence: list[str], extraspace: int = 0, after: bool = True) -> Iterator[str]:
-    """Takes a list of strings, calculates the longest and adds spaces before the other
-    strings to get the same length as the longest
+    """Takes a list of strings, calculates the longest and adds spaces before or after the other
+    strings to get the same length as the longest.
 
     Example:
         >>> hobbies = ['videogames', 'reading', 'birdwatching', 'jogging']
-        >>> for hobby in spaced(hobbies):
-        >>>     print(hobby)
+        >>> print(' '.join(spaced(hobbies)))
+        videogames   reading      birdwatching jogging
+        >>> print(' '.join(spaced(hobbies, extraspace=5)))
+        videogames        reading           birdwatching      jogging
+        >>> print(' '.join(spaced(hobbies, extraspace=5, after=False)))
+               videogames           reading      birdwatching           jogging
 
-    :param extraspace:
-    :type extraspace:
-    :param after:
-    :param sequence:
-    :type sequence:
-    :return:
-    :rtype:
+
+    :param sequence: a sequence of strings
+    :param extraspace: [optional] add a further number of spaces to each string
+    :param after: [optional] a boolean to indicate if spaces must be added before or after
+    the strings, True by default
+    :return: An iterator of strings where every strings as the same length as sum of
+    characters and spaces
     """
     def add_spaces(string, spaces):
         nonlocal after
